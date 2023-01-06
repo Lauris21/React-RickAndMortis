@@ -26,7 +26,9 @@ const Finder = () => {
         {collectionCharacter.map((item) => (
           <figure key={item.id}>
             <Link to={`/finder/${item.id}`}>
-              <h3>{item.name}</h3>
+              <div>
+                <h3>{item.name}</h3>
+              </div>
               <img src={item.image} alt={item.name} />
             </Link>
           </figure>

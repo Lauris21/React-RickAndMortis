@@ -98,6 +98,7 @@ nav > ul > li > a {
     flex-direction: column;
     gap: 2rem;
     place-items: center;
+    
 }
 
 .finder > input {
@@ -111,17 +112,22 @@ nav > ul > li > a {
 
 .finder > div {
     width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     border-radius: 18px;
-    background-color: rgba(67, 17, 114, 0.544);
+    background-image: url("https://images6.alphacoders.com/909/thumb-1920-909641.png");
     box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #9c54cc, 0 0 30px #c70bcafe,
     0 0 40px #840bca, 0 0 50px #8a0bca;
 }
+.finder > div > figure {
+    width: 15rem;
+}
 
 .finder > div > figure > a > img {
-    width: 12rem;
+    width: 10rem;
 }
 
 .finder > div > figure > a {
@@ -132,6 +138,12 @@ nav > ul > li > a {
     width: 15rem;
     margin: auto;
     padding: 1rem;
+}
+.finder > div > figure > a > div {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary);
 }
 
 .comments > div {
@@ -247,15 +259,6 @@ form > input {
     }
     .home > div > img {
         width: 85%;
-    }
-    .finder > div > figure > a > img {
-        width: 7rem;
-    }
-    .finder > div > figure > a {
-        width: 10rem;
-    }
-    .finder > div > figure {
-        width: 10rem;
     }
     .finder > div {
         grid-template-columns: repeat(2, 1fr);
